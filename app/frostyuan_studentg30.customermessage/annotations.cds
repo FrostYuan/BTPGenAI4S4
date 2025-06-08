@@ -1,0 +1,1 @@
+using frostYuan_STUDENTG30Srv as service from '../../srv/service';
