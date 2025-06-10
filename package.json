@@ -31,7 +31,8 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-frostyuan_studentg30.customermessage": "cds watch --open frostyuan_studentg30.customermessage/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-frostyuan_studentg30.customermessage": "cds watch --open frostyuan_studentg30.customermessage/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-frostyuan_studentg30.productfaqapp": "cds watch --open frostyuan_studentg30.productfaqapp/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
@@ -65,6 +66,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/frostyuan_studentg30.customermessage"
+    "app/frostyuan_studentg30.customermessage",
+    "app/frostyuan_studentg30.productfaqapp"
   ]
 }

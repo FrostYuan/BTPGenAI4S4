@@ -15,6 +15,15 @@ service frostYuan_STUDENTG30Srv
             ServiceOrder,
             ServiceOrderDescription
         };
+    @odata.draft.enabled
+    entity ProductFAQ as projection on my.ProductFAQ
+    {
+            ID,
+            issue,
+            question,
+            answer
+    };
+
 }
 
 annotate frostYuan_STUDENTG30Srv with @requires :
