@@ -12,5 +12,16 @@
         "*.rule": "default",
         "*.properties": "default",
         "*.fragment": "default"
+    },
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.crswap": true,
+        "**/*.code":false,
+        "**/.code":false,
     }
 }
