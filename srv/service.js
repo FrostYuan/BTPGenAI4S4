@@ -7,6 +7,7 @@ const customermessage_Logic_PreprocessMessages = require('./code/customermessage
 const productfaq_Logic_EmbedFAQ = require('./code/productfaq-logic-embedFAQ');
 const customermessage_Logic_GenerateReply = require('./code/customermessage-logic-generateReply');
 const customermessage_Logic_MaintainSO = require('./code/customermessage-logic-maintainSO');
+const customermessage_Logic_Test = require('./code/customermessage-logic-test');
 
 class frostYuan_STUDENTG30Srv extends LCAPApplicationService {
     async init() {
@@ -25,6 +26,10 @@ class frostYuan_STUDENTG30Srv extends LCAPApplicationService {
 
         this.on('Action2', 'CustomerMessage', async (request) => {
             return customermessage_Logic_MaintainSO(request);
+        });
+
+        this.before(['CREATE', 'UPDATE'], 'CustomerMessage', async (request) => {
+            await customermessage_Logic_Test(request);
         });
 
         return super.init();

@@ -38,6 +38,6 @@ entity ProductFAQ
     issue : LargeString;
     question : LargeString;
     answer : LargeString;
-    embedding : Vector(1536);
+   // embedding : Vector(1536);
 }
 
